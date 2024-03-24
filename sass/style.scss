@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Sedgwick+Ave+Display&display=swap');
+$transX50: translate(-50%,
+0);
+$trans50: translate(-50%,
+-50%);
+@mixin elements {
+    position: absolute;
+    display: block;
+    text-align: left;
+    margin: 10px;
+}
+
+.Timeline_Timeline {
+    position: relative;
+    width: 100%;
+    font-family: 'Comic Neue', cursive;
+}
+
+.Timeline_MainElement {
+    position: relative;
+    min-width: 400px;
+    left: 50%;
+    top: 0;
+    transform: $transX50;
+    height: auto;
+}
+
+.Timeline_Year_classic {
+    @include elements();
+    text-align: center;
+    margin: 0 2px;
+    font-weight: 600;
+}
+
+.Timeline_Title_classic {
+    @include elements();
+    font: {
+        size: 16px;
+        weight: 600;
+    }
+}
+
+.Timeline_Content_classic {
+    @include elements();
+    color: "#121212";
+    font-size: 14px;
+}
+
+.Timeline_Dot_classic {
+    @extend .Timeline_Dot_inline;
+    width: 8px;
+    height: 8px;
+    animation: glowCircle 1s infinite ease-in-out alternate;
+}
+
+// ! INLINE
+.Timeline_Year_inline {
+    @extend .Timeline_Year_classic;
+    font-size: 26px;
+    text-align: right;
+}
+
+.Timeline_Title_inline {
+    @extend .Timeline_Title_classic;
+    transform: translate(0, -50%);
+    margin: 0px 10px;
+}
+
+.Timeline_Content_inline {
+    @extend .Timeline_Content_classic;
+}
+
+.Timeline_Dot_inline {
+    @include elements();
+    margin: 0;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    left: 50%;
+    transform: $trans50;
+}
+
+// ! INLINE CLASSIC 
+.Timeline_Year_inline_classic {
+    @extend .Timeline_Year_classic;
+    font-size: 26px;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.Timeline_Title_inline_classic {
+    @extend .Timeline_Title_classic;
+    transform: translate(0, -50%);
+    margin: 0px 10px;
+}
+
+.Timeline_Content_inline_classic {
+    @extend .Timeline_Content_classic;
+    transform: translateY(-50%)
+}
+
+.Timeline_Dot_inline_classic {
+    @include elements();
+    margin: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    left: 50%;
+    transform: $trans50;
+}
+
+// ! INLINE_CIRCLE
+.Timeline_Year_inline_circle {
+    @extend .Timeline_Year_classic;
+    margin: 0;
+    display: grid;
+    grid-row: auto;
+    grid-column: auto;
+    font-size: 26px;
+    text-align: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.Timeline_Title_inline_circle {
+    @extend .Timeline_Title_classic;
+    transform: translate(0, -50%);
+    margin: 0px 10px;
+}
+
+.Timeline_Content_inline_circle {
+    @extend .Timeline_Content_classic;
+}
+
+.Timeline_Dot_inline_circle {
+    @extend .Timeline_Dot_inline;
+    background-color: #fff;
+}
+
+// ! Line Arc
+.Timeline_Year_line_arc {
+    @extend .Timeline_Year_classic;
+    margin: 0;
+    font-size: 26px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.Timeline_Title_line_arc {
+    @extend .Timeline_Title_classic;
+    transform: translate(0, -50%);
+    margin: 0px 10px;
+}
+
+.Timeline_Content_line_arc {
+    @extend .Timeline_Content_classic;
+}
+
+.Timeline_Dot_line_arc {
+    @extend .Timeline_Dot_inline;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+}
+
+// !  Arc
+.Timeline_Year_arc {
+    @extend .Timeline_Year_classic;
+    margin: 0;
+    font-size: 26px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.Timeline_Title_arc {
+    @extend .Timeline_Title_classic;
+    transform: translate(0, -50%);
+    margin: 0px 10px;
+}
+
+.Timeline_Content_arc {
+    @extend .Timeline_Content_classic;
+    transform: translateY(-50%)
+}
+
+.Timeline_Dot_arc {
+    @extend .Timeline_Dot_inline;
+    width: 8px;
+    height: 8px;
+}
+
+@keyframes glowCircle {
+    from {
+        width: 8px;
+        height: 8px;
+    }
+    to {
+        width: 12px;
+        height: 12px;
+    }
+}

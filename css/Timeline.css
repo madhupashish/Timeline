@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Sedgwick+Ave+Display&display=swap");
+.Timeline_Timeline {
+  position: relative;
+  width: 100%;
+  font-family: "Comic Neue", cursive;
+}
+
+.Timeline_MainElement {
+  position: relative;
+  min-width: 400px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  height: auto;
+}
+
+.Timeline_Year_classic, .Timeline_Year_arc, .Timeline_Year_line_arc, .Timeline_Year_inline_circle, .Timeline_Year_inline_classic, .Timeline_Year_inline {
+  position: absolute;
+  display: block;
+  text-align: left;
+  margin: 10px;
+  text-align: center;
+  margin: 0 2px;
+  font-weight: 600;
+}
+
+.Timeline_Title_classic, .Timeline_Title_arc, .Timeline_Title_line_arc, .Timeline_Title_inline_circle, .Timeline_Title_inline_classic, .Timeline_Title_inline {
+  position: absolute;
+  display: block;
+  text-align: left;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Timeline_Content_classic, .Timeline_Content_arc, .Timeline_Content_line_arc, .Timeline_Content_inline_circle, .Timeline_Content_inline_classic, .Timeline_Content_inline {
+  position: absolute;
+  display: block;
+  text-align: left;
+  margin: 10px;
+  color: "#121212";
+  font-size: 14px;
+}
+
+.Timeline_Dot_classic {
+  width: 8px;
+  height: 8px;
+  animation: glowCircle 1s infinite ease-in-out alternate;
+}
+
+.Timeline_Year_inline {
+  font-size: 26px;
+  text-align: right;
+}
+
+.Timeline_Title_inline {
+  transform: translate(0, -50%);
+  margin: 0px 10px;
+}
+
+.Timeline_Dot_inline, .Timeline_Dot_arc, .Timeline_Dot_line_arc, .Timeline_Dot_inline_circle, .Timeline_Dot_classic {
+  position: absolute;
+  display: block;
+  text-align: left;
+  margin: 10px;
+  margin: 0;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Timeline_Year_inline_classic {
+  font-size: 26px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.Timeline_Title_inline_classic {
+  transform: translate(0, -50%);
+  margin: 0px 10px;
+}
+
+.Timeline_Content_inline_classic {
+  transform: translateY(-50%);
+}
+
+.Timeline_Dot_inline_classic {
+  position: absolute;
+  display: block;
+  text-align: left;
+  margin: 10px;
+  margin: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Timeline_Year_inline_circle {
+  margin: 0;
+  display: grid;
+  grid-row: auto;
+  grid-column: auto;
+  font-size: 26px;
+  text-align: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.Timeline_Title_inline_circle {
+  transform: translate(0, -50%);
+  margin: 0px 10px;
+}
+
+.Timeline_Dot_inline_circle {
+  background-color: #fff;
+}
+
+.Timeline_Year_line_arc {
+  margin: 0;
+  font-size: 26px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.Timeline_Title_line_arc {
+  transform: translate(0, -50%);
+  margin: 0px 10px;
+}
+
+.Timeline_Dot_line_arc {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+}
+
+.Timeline_Year_arc {
+  margin: 0;
+  font-size: 26px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.Timeline_Title_arc {
+  transform: translate(0, -50%);
+  margin: 0px 10px;
+}
+
+.Timeline_Content_arc {
+  transform: translateY(-50%);
+}
+
+.Timeline_Dot_arc {
+  width: 8px;
+  height: 8px;
+}
+
+@keyframes glowCircle {
+  from {
+    width: 8px;
+    height: 8px;
+  }
+  to {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
