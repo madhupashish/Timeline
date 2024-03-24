@@ -146,4 +146,4 @@ const option={
 
 - ## New Style coming soon
 
-made with ♥  by  [Shoaib Norouzi](https://shoaibnorouzi.alwaysdata.net)
+made with ♥  by  Ashish Madhup
