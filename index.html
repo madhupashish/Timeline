@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="" src="./ts/Timeline.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shoaibn98/Timeline/Timeline.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/shoaibn98/Timeline/Timeline.min.js"></script> -->
+</head>
+
+<body>
+    <div class="Timeline_Timeline" id="myTimeline">
+    </div>
+
+    <script>
+        var option = {
+            targetId: "myTimeline",
+            width: 500,
+            offset: 150,
+            timeline: "arc_dot",
+            data: [
+                ["2018", "an Old Pick", "Aliqua reprehenderit ex labore ad est occaecat officia labore voluptate magna enim sit sit ipsum.eiusmod eu cehenderit tempor consectetur nostrud."],
+                ["2019", "current Pick", "Amet velit cupidatat sint occaecat commodo.eiusmod eu consectetur in adipisicing amet reprehenderit tempor consectetur nostrud."],
+                ["2020", "Future pick", "Quis sit elit nisi cd sint eiusmod eumet reprehenderit tempor consectetur nostrud. Proident commodo tempor uididunt aliquip sunt fugiat adipi dolore minim ea nisi commodo."],
+
+            ],
+            background: "#fff"
+        }
+        new Timeline(option);
+    </script>
+</body>
+
+</html>
